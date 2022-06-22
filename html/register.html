@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4fb1bd6ede.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/register.css">
+
+
+    <title>Register</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="login-button">
+            <a href="login.html"> <button type="button" class="btn2">Login</button></a>
+             <a href="#"> <button type="button" class="btn2">About Us</button></a>
+    </div>
+        <h1 class="register-text">Free register on JourPics</h1>
+
+    </header>
+
+
+    <form onsubmit="register(event)">
+
+        <div class="register-form">
+
+            <p>
+            <h2></h2>
+            </p>
+            <hr>
+            <label for="name"><b>
+                    <h3>Name</h3>
+                </b></label>
+            <input id="name" type="text" placeholder="Enter Name" name="name" required>
+
+            <label for="email"><b>
+                    <h3>Email</h3>
+                </b></label>
+            <input id="email" type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="password"><b>
+                    <h3>Password</h3>
+                </b></label>
+            <input id="password" type="password" placeholder="Enter Password" name="password" required>
+            <hr>
+            <div class="user-success new-user alert alert-success" role="alert">
+                The user was created successfully! Go to Login!
+            </div>
+            <button type="submit" class="registerbtn">Register</button>
+
+        </div>
+
+    </form>
+    <footer class="footer"> Copyright 2022 - Voina
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../js/http-api.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/functii.js"></script>
+</body>
+
+</html>

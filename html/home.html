@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <title>JourPics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--responsive-->
+    <link rel="stylesheet" href="../css/home.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <!--<h1>JourPics</h1>-->
+            <img src="../img/earth.png" class="logo">
+            <ul>
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fas fa-video"></i></a></li>
+                <li><a href="#"><i class="fas fa-camera"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="../img/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="../img/noi2.jpg">
+            </div>
+        </div>
+        <!--DROPDOWN CU SIGNOUT-->
+        <div class="settings-menu">
+            <div class="settings-menu-inner">
+                <div class="user-profile" id="user-profile-id">
+                    <img src="../img/noi2.jpg">
+                    <div>
+                        <p>Dan Voina</p>
+                        <a href="profile.html">Your profile</a>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="../img/feedback.jpg">
+                    <div>
+                        <p>Give us a feedback</p>
+                        <a href="#">Help us to improve</a>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="../img/settings.png" class="settings-icon">
+                    <a href="#">Settings and privacy <img src="../img/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="../img/help.png" class="settings-icon">
+                    <a href="#">Help and support <img src="../img/arrow.png" width="10px"></a>
+                </div>
+
+                <div class="setting-links">
+                    <img src="../img/logout.png" class="settings-icon">
+                    <a href="login.html">Logout <img src="../img/arrow.png" width="10px"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+
+        <div class="left-side">
+
+            <div class="travel-icons">
+                <a href="#"><i class="fas fa-globe"></i>Discover the world</a>
+                <a href="#"><i class="fas fa-calendar-alt"></i>Future events about traveling</a>
+                <a href="#"><i class="fas fa-user-plus"></i>Follow others,incredible places they visit</a>
+                <a href="#"><i class="fas fa-users"></i>Join a group and share each other incredible travel stories</a>
+                <a href="#"><i class="fas fa-star"></i>Your favorite places in the world</a>
+                <a href="#"><i class="fas fa-hotel"></i>Discover accommodations recommendations from other travelers</a>
+                <a href="#"><i class="fas fa-hand-holding-usd"></i>Discover travel offers</a>
+            </div>
+
+            <div class="informations-left-side">
+                <a href="#">About.</a>
+                <a href="#">Help.</a>
+                <a href="#">Privacy.</a>
+                <a href="#">Terms.</a>
+                <a href="#">Language.</a>
+            </div>
+        </div>
+
+
+
+        <!--Main content-->
+        <div class="main-content">
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="../img/noi2.jpg">
+                    <div>
+                        <p>Dan Voina</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea id="my-textarea" rows="3"
+                        placeholder="Say something here...about your travelling"></textarea>
+                    <div class="add-post-link">
+                        <a href="#"><i class="fas fa-play-circle"></i>Live Video</a>
+                        <a href="#"><i class="fas fa-camera-retro"></i>Photo Video</a>
+                        <a href="#"><i class="fas fa-sun"></i>Write your traveling memories</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="../img/noi2.jpg">
+                        <div>
+                            <p>Dan Voina</p>
+                            <span>04 Ianuarie 2022, 17:11 PM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">La inceput de drum <a href="#">#Youtube</a> <a href="#">#Instagram</a></p>
+                <img src="../img/greece1.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="check-btn">
+                            <button class="check-icon" type="button"><span class="check-span"><i class="far fa-check-square"></i></span></button>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="msg-btn">
+                            <i class="far fa-comment-alt"></i>0
+                        </div>
+                        <div class="wish-btn">
+                            <button class="wish-icon"><i class="far fa-map"></i></button>
+                            <span class="wish-count">0</span>
+                        </div>
+
+                    </div> 
+                    <div class="post-profile-icon">
+                        <img src="../img/noi2.jpg"> <i class="fas fa-caret-down"></i>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="../img/noi2.jpg">
+                        <div>
+                            <p>Dan Voina</p>
+                            <span>05 Ianuarie 2022, 11:59 AM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">La inceput de drum,continuam povestea noastra
+                    <a href="#">#Youtube</a>
+                    <a href="#">#Instagram</a>
+                </p>
+                <img src="../img/greece5.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="check-btn">
+                            <button class="check-icon" type="button"><i
+                                    class="far fa-check-square"></i></button>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="msg-btn">
+                            <i class="far fa-comment-alt"></i>0
+                        </div>
+                        <div class="wish-btn">
+                            <button class="check-icon" type="button"><span class="check-span"><i class="far fa-map"></i></span></button>
+                            <span class="wish-count">0</span>
+                        </div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="../img/noi2.jpg"> <i class="fas fa-caret-down"></i>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="../img/noi2.jpg">
+                        <div>
+                            <p>Dan Voina</p>
+                            <span>05 Ianuarie 2022, 11:59 AM</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">La inceput de drum,continuam povestea noastra <a href="#">#Youtube</a> <a
+                        href="#">#Instagram</a></p>
+                <img src="../img/parang1.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div class="check-btn">
+                            <button class="check-icon" type="button"><span class="check-span"><i class="far fa-check-square"></i></span></button>
+
+                            <span class="count">0</span>
+                        </div>
+                        <div class="msg-btn">
+                            <i class="far fa-comment-alt"></i>0
+                        </div>
+                        <div class="wish-btn">
+                            <button class="wish-icon"><i class="far fa-map"></i></button>
+                            <span class="wish-count">0</span>
+                        </div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="../img/noi2.jpg"> <i class="fas fa-caret-down"></i>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!--div class="right-side"></div>-->
+    </div>
+
+    <footer class="footer"> Copyright 2022 - Voina
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/4fb1bd6ede.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/http-api.js"></script>
+    <script src="../js/functii.js"></script>
+</body>
+
+</html>
