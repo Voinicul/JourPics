@@ -1,0 +1,57 @@
+.user-success {
+  display: none;
+}
+
+.login-success {
+  display: none;
+}
+
+.login-error {
+  display: none;
+}
+
+.error-container {
+  display: none;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: white;
+}
+
+.footer {
+  text-align: center;
+  color: #9a9a9a;
+  padding: 10px 0 20px;
+  font-size: 13px;
+}
+
+.login-text {
+  text-align: center;
+  color: skyblue;
+  font-size: 40px;
+  padding-bottom: 120px;
+  padding-top: 34px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.form-group .col-md-8 {
+   display:flex;
+   align-content: center;
+}
+
+.btn3 {
+    width: 230px;
+}
