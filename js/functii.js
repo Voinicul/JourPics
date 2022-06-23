@@ -22,24 +22,3 @@ btn.forEach((currentBtn) => {
 
 //..................
 
-let checkBtn = document.querySelectorAll(".check-btn");
-let likeIcon = document.querySelectorAll(".check-icon");
-let count = document.querySelectorAll(".count");
-let clicked=false;
-
-checkBtn.forEach(checkbtn => {
-checkbtn.addEventListener('click',() =>{
-if(!clicked){
-    clicked=true;
-    likeIcon.innerHTML = ` <i class="fas fa-check-square"></i> `;
-    count.textContent++;
-}else{
-    clicked=false;
-    likeIcon.innerHTML = ` <i class="far fa-check-square"></i> ` ;
-    count.textContent--;
-}
-
-
-});
-
-});
